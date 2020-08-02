@@ -1,6 +1,8 @@
 package in.scabhopal.scamanagementsystem.backend.communication;
 
 import in.scabhopal.scamanagementsystem.common.Constants.RequestId;
+import java.util.List;
+import java.util.Map;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,7 +15,8 @@ import in.scabhopal.scamanagementsystem.common.Constants.RequestId;
  * @author HP
  */
 public class Request {
-    RequestId requestId;
+    private RequestId requestId;
+    private List<Map<String,Object>> records;
 
     public RequestId getRequestId() {
         return requestId;
