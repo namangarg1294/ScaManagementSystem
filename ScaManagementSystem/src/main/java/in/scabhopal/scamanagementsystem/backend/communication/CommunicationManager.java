@@ -14,9 +14,9 @@ public class CommunicationManager {
     private CommunicationManager() {
 
     }
-   private CommunicationManager self = null;
+   private static CommunicationManager self = null;
 
-    public CommunicationManager getInstance() {
+    public static CommunicationManager getInstance() {
         if (self == null) {
             self = new CommunicationManager();
         }
