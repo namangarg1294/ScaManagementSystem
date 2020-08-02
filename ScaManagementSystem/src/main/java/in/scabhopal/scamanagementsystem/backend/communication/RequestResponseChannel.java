@@ -10,5 +10,7 @@ package in.scabhopal.scamanagementsystem.backend.communication;
  * @author HP
  */
 public class RequestResponseChannel {
-    
+    public Response processRequest(Request request){
+        return CommunicationManager.getInstance().processRequest(request);
+    }
 }
