@@ -17,8 +17,11 @@ import java.util.Map;
 public class Request {
     private RequestId requestId;
     private List<Map<String,Object>> records;
+    
 
     public RequestId getRequestId() {
+        
+        
         return requestId;
     }
 
